@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber-Moto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Uber-Moto</h1>
+        
+        <!-- Crear Cuenta -->
+        <div class="box">
+            <h2>Crear Cuenta</h2>
+            <form id="signup-form">
+                <input type="text" id="first-name" placeholder="Nombres" required>
+                <input type="text" id="last-name" placeholder="Apellidos" required>
+                <input type="tel" id="phone" placeholder="Número de Teléfono" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <select id="location" required>
+                    <option value="" disabled selected>Seleccionar Ubicación</option>
+                    <option value="colonia-los-almendros">Colonia Los Almendros</option>
+                    <option value="el-progreso">El Progreso</option>
+                    <option value="el-paraiso">El Paraíso</option>
+                    <option value="plaza-america">Plaza América</option>
+                    <option value="parque-central">Parque Central</option>
+                    <option value="colonia-san-andres">Colonia San Andrés</option>
+                    <option value="calzada-centenario">Calzada Centenario</option>
+                    <option value="avenida-la-libertad">Avenida La Libertad</option>
+                </select>
+                <button type="submit">Crear Cuenta</button>
+            </form>
+        </div>
+        
+        <!-- Barra de Búsqueda -->
+        <div class="box">
+            <h2>Buscar Destino</h2>
+            <input type="text" id="destination" placeholder="Ingrese la dirección del destino">
+            <button id="search-btn">Buscar</button>
+        </div>
+        
+        <!-- Solicitar Viaje -->
+        <div class="box">
+            <button id="request-ride">Solicitar Viaje</button>
+        </div>
+        
+        <!-- Sistema de Pago -->
+        <div class="box">
+            <h2>Pago</h2>
+            <form id="payment-form">
+                <select id="payment-method" required>
+                    <option value="" disabled selected>Seleccionar Método de Pago</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="credit-card">Tarjeta de Crédito</option>
+                    <option value="debit-card">Tarjeta de Débito</option>
+                    <option value="cash">Efectivo</option>
+                </select>
+                <button type="submit">Pagar</button>
+            </form>
+        </div>
+        
+        <!-- Calificación -->
+        <div class="box">
+            <h2>Calificación</h2>
+            <textarea id="feedback" placeholder="Deja un comentario"></textarea>
+            <button id="submit-feedback">Enviar Comentario</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
